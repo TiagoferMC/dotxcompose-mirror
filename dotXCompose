@@ -1,8 +1,8 @@
 # for Emacs: -*- coding: utf-8 -*-
-include "%L"
+include "%Len_US.UTF-8/Compose"
 
 # def emit(keys, codepoint, word):
-#     print ('<Multi_key> %s <period>\t: "%s"\tU%04X\t\t# CIRCLED DIGIT %s' % 
+#     print ('<Multi_key> %s <period>\t: "%s"\tU%04X\t\t# CIRCLED DIGIT %s' %
 #            (keys, unichr(codepoint), codepoint, word)).encode('utf8')
 # numbers = 'one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty'
 # words = numbers.upper().split()
@@ -179,7 +179,7 @@ include "%L"
 # For some logical statements.  I prefer doubled arrows for implication.
 <Multi_key> <equal> <greater>		: "⇒"	U21D2		# RIGHTWARDS DOUBLE ARROW
 <Multi_key> <equal> <less>		: "⇐"	U21D0		# LEFTWARDS DOUBLE ARROW
-<Multi_key> <less> <minus> <equal> <greater> : "⇔" U21D4 # LEFT RIGHT DOUBLE ARROW 
+<Multi_key> <less> <minus> <equal> <greater> : "⇔" U21D4 # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <equal> <Right> <Right>	: "⇒"	U21D2		# RIGHTWARDS DOUBLE ARROW
 <Multi_key> <equal> <Left> <Left>	: "⇐"	U21D0		# LEFTWARDS DOUBLE ARROW
 <Multi_key> <equal> <Left> <Right>	: "⇔"	U21D4	# LEFT RIGHT DOUBLE ARROW
@@ -206,7 +206,7 @@ include "%L"
 # ß is already available as <s><s> I think.  But now it comes in industrial size!
 <Multi_key> <S> <S> 		: "ẞ"  U1E9E	   # LATIN CAPITAL LETTER SHARP S
 
-# Eventually we'll have to look over the really crazy-cakes Latin letters 
+# Eventually we'll have to look over the really crazy-cakes Latin letters
 # they're adding as "mediævalist extensions"
 # ꜢꜣꜤꜥ for the Egyptologists, Ꝏꝏ because they're cꝏl...  Maybe some others.
 # Can't do <o> <o> for ꝏ though, since that's already °.
@@ -243,8 +243,8 @@ include "%L"
 # The ligature pairs are so easy, might as well include them (probably
 # using ampersand though).  P with flourish?  Squirrel tail?  How
 # pretty!  I like the r and rum rotunda, and et actually has something
-# close to usefulness (it was very common for abbreviations, and is the 
-# source of the "z" in abbreviations like oz. and viz.)  Some others 
+# close to usefulness (it was very common for abbreviations, and is the
+# source of the "z" in abbreviations like oz. and viz.)  Some others
 # are a little appealing too.
 
 <Multi_key> <A> <ampersand> <A> :	"Ꜳ"	UA732		# LATIN CAPITAL LETTER AA
@@ -405,7 +405,7 @@ include "%L"
 <Multi_key> <Multi_key> <o> <i> <i> <i> <n> <t>	: "∰"	U2230		# VOLUME INTEGRAL
 <Multi_key> <Multi_key> <g> <i> <n> <t>	: "⨘"	U2A18		# GEOMETRIC INTEGRAL
 <Multi_key> <Multi_key> <s> <i> <n> <t>	: "⨋"	U2A0B		# SUM/INTEGRAL
-#Now for some WTF integrals: ⨙ ⨚ 	
+#Now for some WTF integrals: ⨙ ⨚
 <Multi_key> <Multi_key> <d> <e> <l>	: "∇"	U2207	        # NABLA
 <Multi_key> <Multi_key> <p> <a> <r> <t>   : "∂" U2202		# PARTIAL DIFFERENTIAL
 <Multi_key> <asterisk> <period> <period> <d>   : "∂" U2202	# PARTIAL DIFFERENTIAL
@@ -422,7 +422,7 @@ include "%L"
 <Multi_key> <asciicircum> <greater>     : "⃗"   U20D7           # COMBINING RIGHT ARROW ABOVE (vector)
 <Multi_key> <bar> <C>                   : "ℂ"   U2102           # DOUBLE-STRUCK CAPITAL C (set of complex numbers)
 <Multi_key> <bar> <N>                   : "ℕ"   U2115           # DOUBLE-STRUCK CAPITAL N (natural number)
-<Multi_key> <bar> <P>                   : "ℙ"   U2119           # DOUBLE-STRUCK CAPITAL P 
+<Multi_key> <bar> <P>                   : "ℙ"   U2119           # DOUBLE-STRUCK CAPITAL P
 <Multi_key> <bar> <Q>                   : "ℚ"   U211A           # DOUBLE-STRUCK CAPITAL Q (set of rational numbers)
 <Multi_key> <bar> <R>                   : "ℝ"   U211D           # DOUBLE-STRUCK CAPITAL R (set of real numbers)
 <Multi_key> <bar> <Z>                   : "ℤ"   U2124           # DOUBLE-STRUCK CAPITAL Z (set of integers)
@@ -442,10 +442,10 @@ include "%L"
 <Multi_key> <bar> <semicolon>	:   "⨾"	U2A3E	# Z NOTATION RELATIONAL COMPOSITION
 # The *look* double-struck.
 <Multi_key> <bar> <braceleft>	 : "⦃" U2983	# LEFT WHITE CURLY BRACKET
-<Multi_key> <bar> <braceright>	 : "⦄" U2984	# RIGHT WHITE CURLY BRACKET 
+<Multi_key> <bar> <braceright>	 : "⦄" U2984	# RIGHT WHITE CURLY BRACKET
 # ⦅⦆⦇⦈⦉⦊ too?
 # The rest of that block?  Some there may be worth it.
-# Ooh.  There are lots of nice brackets to consider: 
+# Ooh.  There are lots of nice brackets to consider:
 # ⟅⟆⟨⟩⟪⟫⟬⟭⟮⟯⦑⦒⦓⦔⦕⦖⦗⦘⧼⧽⧘⧙⧚⧛⸢⸣⸤⸥⸨⸩「」『』
 # Others too, of course, but these to start with.  Some are likely worthy.
 <Multi_key> <S> <parenleft>  	: "⟅" U27C5 	# LEFT S-SHAPED BAG DELIMITER
@@ -687,7 +687,7 @@ include "%L"
 <Multi_key> <1> <slash>			: "⅟" U215F	      # FRACTION NUMERATOR ONE
 
 # How about roman numerals?  Percent for numerical mnemonic?
-# Does this go against the spirit of this file?  These symbols are accessible 
+# Does this go against the spirit of this file?  These symbols are accessible
 # as regular letters and would look okay.  Maybe only for I-X?
 <Multi_key> <percent> <1>		: "ⅰ"	U2170		# SMALL ROMAN NUMERAL ONE
 <Multi_key> <percent> <2>		: "ⅱ"	U2171		# SMALL ROMAN NUMERAL TWO
@@ -875,8 +875,8 @@ include "%L"
 <Multi_key> <Multi_key> <a> <t> <o> <m>	        : "⚛"	U269B		# ATOM SYMBOL
 <Multi_key> <Multi_key> <c> <c> <c> <p>		: "☭" 	U262D		# HAMMER AND SICKLE
 <Multi_key> <slash> <exclam> <backslash> : "⚠"  U26A0           # WARNING SIGN
-<Multi_key> <exclam> <asciicircum>	: "⚠"	U26A0		# WARNING SIGN 
-<Multi_key> <Multi_key> <z> <a> <p>	  		: "⚡"	U26A1		# HIGH VOLTAGE SIGN 
+<Multi_key> <exclam> <asciicircum>	: "⚠"	U26A0		# WARNING SIGN
+<Multi_key> <Multi_key> <z> <a> <p>	  		: "⚡"	U26A1		# HIGH VOLTAGE SIGN
 # Shouldn't use just <r><a> because it's too likely to be a prefix for
 # a useful word.
 <Multi_key> <Multi_key> <r> <a> <d>	: "☢"	U2622		# RADIOACTIVE SIGN
@@ -896,7 +896,7 @@ include "%L"
 # 26B0 COFFIN ?
 # One of the SNOWFLAKEs?
 # SNOWMAN? COMET? ANCHOR?
-# Maybe if we go with having a "word" symbol and spelling out lots and 
+# Maybe if we go with having a "word" symbol and spelling out lots and
 # lots of whole words, we can have all the planets.
 #
 # I already have STAR OF DAVID on another map.
@@ -1417,7 +1417,7 @@ include "%L"
 <Multi_key> <Multi_key> <o> <p> <h> <i> <u> <c> : "⛎"	U26CE	# OPHIUCHUS
 
 # Sigh.  So many emoji...  I think the first ones I'd go for would be
-# 💡💢💣💤💥💦💧💨💫 (1F4A1-1F4A8 and 1F4AB).  Maybe 1F550-1F567 are useful.  
+# 💡💢💣💤💥💦💧💨💫 (1F4A1-1F4A8 and 1F4AB).  Maybe 1F550-1F567 are useful.
 <Multi_key> <Multi_key> <i> <d> <e> <a>	    : "💡"    U1F4A1 # ELECTRIC LIGHT BULB
 <Multi_key> <Multi_key> <a> <n> <g> <e> <r> : "💢"    U1F4A2 # ANGER SYMBOL
 <Multi_key> <Multi_key> <b> <o> <m> <b>	    : "💣"    U1F4A3 # BOMB
@@ -1470,3 +1470,4 @@ include "%L"
 <Multi_key> <parenleft> <1> <2> <colon> <3> <0> <parenright>     : "🕧" U1F567 # CLOCK FACE TWELVE-THIRTY
 # Real bitcoin symbol now.
 <Multi_key> <B> <bar> : "₿" U20BF  # BITCOIN SIGN
+
