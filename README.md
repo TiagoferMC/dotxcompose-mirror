@@ -1,6 +1,8 @@
 .XCompose
 =========
 
+My Custom .dotXCompose settings, forked from https://github.com/kragen/xcompose/
+
 As explained in <http://canonical.org/~kragen/setting-up-keyboard.html>,
 your Compose key in X11 is controlled by (among other things) the file
 `.XCompose` in your home directory.  This file gives you a large set
